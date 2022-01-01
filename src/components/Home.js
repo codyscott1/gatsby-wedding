@@ -22,8 +22,7 @@ export default function Home() {
           activeIndex={index}
           onSelect={handleSelect}
           className="col-12"
-          fade
-          slide={false}
+          slide={true}
           indicators={false}
           nextLabel=""
           nextIcon={
