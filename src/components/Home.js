@@ -24,6 +24,7 @@ export default function Home() {
           className="col-12"
           fade
           slide={false}
+          indicators={false}
           nextLabel=""
           nextIcon={
             <span
