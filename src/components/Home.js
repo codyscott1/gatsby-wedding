@@ -25,6 +25,20 @@ export default function Home() {
           fade
           slide={false}
           nextLabel=""
+          nextIcon={
+            <span
+              aria-hidden="true"
+              aria-label="next carousel item"
+              className="carousel-control-next-icon"
+            />
+          }
+          prevIcon={
+            <span
+              aria-hidden="true"
+              aria-label="previous carousel item"
+              className="carousel-control-prev-icon"
+            />
+          }
           prevLabel=""
         >
           {images.map((image, i) => (
