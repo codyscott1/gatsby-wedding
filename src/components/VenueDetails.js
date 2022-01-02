@@ -69,7 +69,7 @@ const VenueDetails = () => {
             <a href="https://www.kuedsmokehouse.com/">
               <StaticImage
                 className="w-full"
-                src="../images/timeline-kued.png"
+                src="../images/timeline-Kued.png"
                 alt="kued BBQ"
                 backgroundColor="#5b0000"
                 objectFit="contain"
