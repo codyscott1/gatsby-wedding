@@ -2,8 +2,9 @@ import React from "react";
 import { Helmet } from "react-helmet";
 
 const Seo = () => {
-  const title = "Crandall Wedding";
-  const description = "Crandall Wedding reservation site";
+  const title = "Cody and Lexie Wedding";
+  const description =
+    "Crandall Wedding reservation Iowa Des Moines Giovenetti Shelter";
   return (
     <Helmet
       htmlAttributes={{
