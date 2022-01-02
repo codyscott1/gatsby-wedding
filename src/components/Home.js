@@ -24,7 +24,6 @@ export default function Home() {
   `);
 
   const filtered = filteredImages(nodes);
-  console.log(filtered);
 
   const [index, setIndex] = useState(0);
 
@@ -53,7 +52,8 @@ export default function Home() {
               <GatsbyImage
                 image={image.gatsbyImageData}
                 alt="Carousel slide"
-                className="d-block w-100 rounded mh-50"
+                className="d-block rounded mh-50"
+                layout="full-width"
               />
             </Carousel.Item>
           ))}
