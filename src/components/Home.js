@@ -24,7 +24,6 @@ export default function Home() {
           className="col-12"
           slide={true}
           indicators={false}
-          nextLabel=""
           nextIcon={
             <span
               aria-hidden="true"
@@ -39,7 +38,6 @@ export default function Home() {
               className="carousel-control-prev-icon"
             />
           }
-          prevLabel=""
         >
           {images.map((image, i) => (
             <Carousel.Item key={i}>
