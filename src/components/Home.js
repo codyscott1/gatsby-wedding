@@ -28,7 +28,7 @@ export default function Home() {
           {images.map((image, i) => (
             <Carousel.Item key={i}>
               <img
-                loading="lazy"
+                loading="eager"
                 className="d-block w-100 rounded mh-50"
                 src={image}
                 alt="First slide"
