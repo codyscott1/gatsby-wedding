@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import { StaticImage } from "gatsby-plugin-image";
 import Home from "../components/Home";
-import RSVP from "../components/RSVP";
+import Reservations from "../components/reservations";
 import Details from "../components/VenueDetails";
 
 const IndexPage = () => {
@@ -31,7 +31,7 @@ const IndexPage = () => {
       </div>
       <div className="container-fluid">
         <Home />
-        <RSVP />
+        <Reservations />
         <Details />
       </div>
     </div>

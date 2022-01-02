@@ -4,7 +4,7 @@ import GroupSearch from "./GroupSearch";
 import GuestList from "./GuestList";
 import GuestReservedToast from "./GuestReservedToast";
 
-export default function RSVP() {
+export default function Reservations() {
   const [guests, setGuests] = useState([]);
 
   const getConfirmedGuests = () =>
