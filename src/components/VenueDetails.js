@@ -4,11 +4,18 @@ import { StaticImage } from "gatsby-plugin-image";
 import michaelScott from "../images/timeline-michaelScott.gif";
 const VenueDetails = () => {
   const TimelineItem = ({ children, text }) => (
-    <div className="col-lg-3 col-md-6 gy-5">
-      <p className="w-full py-3">{text}</p>
+    <div className="col-lg-3 col-md-6 gy-4">
+      <p className="w-full pt-3 mb-0">{text}</p>
       {children}
     </div>
   );
+
+  const StaticImageStyles = {
+    maxHeight: "375px",
+    maxWidth: "250px",
+    minHeight: "375px",
+    borderRadius: "15px",
+  };
 
   return (
     <>
@@ -47,10 +54,7 @@ const VenueDetails = () => {
               src="../images/timeline-codyLexie.jpeg"
               alt="bride and groom"
               className="w-full"
-              style={{
-                minHeight: "375px",
-                borderRadius: "15px",
-              }}
+              style={StaticImageStyles}
             />
           </TimelineItem>
           <TimelineItem text="4:30 PM - Happy Hour">
@@ -58,10 +62,7 @@ const VenueDetails = () => {
               src="../images/timeline-cheers.jpg"
               alt="champagne"
               className="w-full"
-              style={{
-                minHeight: "375px",
-                borderRadius: "15px",
-              }}
+              style={StaticImageStyles}
             />
           </TimelineItem>
           <TimelineItem text="5:30 PM - Kue'd BBQ">
@@ -75,8 +76,7 @@ const VenueDetails = () => {
                 style={{
                   border: "10px solid #5b0000",
                   aspectRatio: "4 / 5",
-                  minHeight: "375px",
-                  borderRadius: "15px",
+                  ...StaticImageStyles,
                 }}
               />
             </a>
@@ -87,10 +87,9 @@ const VenueDetails = () => {
               alt="michael scott dancing"
               className="w-full"
               style={{
-                minHeight: "375px",
-
                 objectFit: "contain",
                 borderRadius: "15px",
+                ...StaticImageStyles,
               }}
             />
           </TimelineItem>
