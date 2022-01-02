@@ -24,20 +24,6 @@ export default function Home() {
           className="col-12"
           slide={true}
           indicators={false}
-          nextIcon={
-            <span
-              aria-hidden="true"
-              aria-label="next carousel item"
-              className="carousel-control-next-icon"
-            />
-          }
-          prevIcon={
-            <span
-              aria-hidden="true"
-              aria-label="previous carousel item"
-              className="carousel-control-prev-icon"
-            />
-          }
         >
           {images.map((image, i) => (
             <Carousel.Item key={i}>
