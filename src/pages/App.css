@@ -48,6 +48,12 @@ body h3 {
   box-shadow: none;
 }
 
+.form-check-input:checked {
+  transition: background-color 1s ease, border-color 1s ease;
+  background-color: #80977f;
+  border-color: #80977f;
+}
+
 .form-check-input {
   background-color: white;
 }
