@@ -34,7 +34,7 @@ const VenueDetails = () => {
               9000 Douglas Avenue, Urbandale
             </a>
           </div>
-          <h5 className="mb-3">Giovannetti Community Shelter</h5>
+          <h4 className="mb-3">Giovannetti Community Shelter</h4>
         </div>
       </div>
       <div className="col-12">
