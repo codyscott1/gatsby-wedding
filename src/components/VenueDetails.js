@@ -39,7 +39,7 @@ const VenueDetails = () => {
       <div className="col-12">
         <StaticImage
           src="../images/giovenetti.jpg"
-          alt="leaves"
+          alt="venue"
           className="d-block w-100 rounded shadow "
           placeholder="blurred"
         />
