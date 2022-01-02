@@ -1,8 +1,31 @@
 import React, { useState } from "react";
+import { useStaticQuery, graphql } from "gatsby";
+
 import Carousel from "react-bootstrap/Carousel";
-import images from "../images/images";
+import { GatsbyImage } from "gatsby-plugin-image";
 
 export default function Home() {
+  const filteredImages = (images) =>
+    images.filter(({ original }) => original.src.includes("carousel"));
+
+  const {
+    allImageSharp: { nodes },
+  } = useStaticQuery(graphql`
+    query MyQuery {
+      allImageSharp {
+        nodes {
+          gatsbyImageData
+          original {
+            src
+          }
+        }
+      }
+    }
+  `);
+
+  const filtered = filteredImages(nodes);
+  console.log(filtered);
+
   const [index, setIndex] = useState(0);
 
   const handleSelect = (selectedIndex, e) => setIndex(selectedIndex);
@@ -25,13 +48,12 @@ export default function Home() {
           slide={true}
           indicators={false}
         >
-          {images.map((image, i) => (
+          {filtered.map((image, i) => (
             <Carousel.Item key={i}>
-              <img
-                loading="eager"
+              <GatsbyImage
+                image={image.gatsbyImageData}
+                alt="Carousel slide"
                 className="d-block w-100 rounded mh-50"
-                src={image}
-                alt="First slide"
               />
             </Carousel.Item>
           ))}
