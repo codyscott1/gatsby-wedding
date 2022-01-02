@@ -14,7 +14,7 @@ export default function Home() {
     query MyQuery {
       allImageSharp {
         nodes {
-          gatsbyImageData
+          gatsbyImageData(quality: 100)
           original {
             src
           }
@@ -53,8 +53,10 @@ export default function Home() {
                 image={image.gatsbyImageData}
                 alt="Carousel slide"
                 className="d-block rounded mh-50"
-                layout="full-width"
+                quality={100}
               />
+
+              {/* <img src={image.original.src} /> */}
             </Carousel.Item>
           ))}
         </Carousel>
