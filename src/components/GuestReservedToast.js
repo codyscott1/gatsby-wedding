@@ -32,9 +32,9 @@ const GuestReservedToast = ({ names }) => {
         position: "absolute",
         minHeight: "100px",
       }}
-      className="text-success"
+      className="text-success start-50 translate-middle"
     >
-      <Toast delay={3000} autohide>
+      <Toast>
         <Toast.Body>{getMessage(names)}</Toast.Body>
       </Toast>
     </div>

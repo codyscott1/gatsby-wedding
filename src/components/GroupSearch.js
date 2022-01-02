@@ -40,14 +40,16 @@ const GroupSearch = ({ setGuests }) => {
         </button>
       ) : (
         <div className="col-10 text-center order-first">
-          <h4 className="mb-3">To continue please enter your group ID</h4>
+          <h3 className="mb-3">To continue please enter your group ID</h3>
           <form className="needs-validation" noValidate="">
             <div className="row g-3">
               <div className="col-12">
                 <input
+                  tabIndex={0}
+                  aria-label="guest ID input"
                   autoComplete="off"
                   type="text"
-                  className={`text-center form-control ${inputValidationCSS()} static`}
+                  className={`text-center form-control ${inputValidationCSS()}`}
                   id="groupID"
                   placeholder="EX. 777B3"
                   value={guestID}

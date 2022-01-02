@@ -23,9 +23,9 @@ const GuestList = ({ guests, setGuests, confirmedReservationsCount }) => {
   }
   return (
     <div className="col-10">
-      <h4 className="text-center my-3">
+      <h3 className="text-center my-3">
         Select reservations to confirm from the list below
-      </h4>
+      </h3>
       <ul className="mb-3 list-group">
         {guests.map((guest, i) => (
           <checkbox
@@ -36,9 +36,8 @@ const GuestList = ({ guests, setGuests, confirmedReservationsCount }) => {
             onClick={() => {
               toggleGuestReservation(guest);
             }}
-            onKeyDown={() => toggleGuestReservation(guest)}
           >
-            <h6 className="my-auto">{guest.name}</h6>
+            <h4 className="my-auto">{guest.name}</h4>
             <div className="form-check form-switch">
               <input
                 type="checkbox"

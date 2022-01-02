@@ -17,14 +17,13 @@ export default function Reservations() {
 
   return (
     <div id="rsvp">
-      {<GuestReservedToast names={getConfirmedNames()} />}
       <div className="py-5" style={{ minHeight: "350px" }}>
         <main>
           <div className="text-center">
-            <h3 className="display-4 mb-0">Reserve your seat now</h3>
-            <h4 className="my-3">
+            <h1 className="display-4 mb-0">Reserve your seat now</h1>
+            <h2 className="my-3">
               We are so excited to share this day with you
-            </h4>
+            </h2>
           </div>
           <div className="row justify-content-around">
             {
@@ -38,6 +37,7 @@ export default function Reservations() {
           </div>
         </main>
       </div>
+      {<GuestReservedToast names={getConfirmedNames()} />}
     </div>
   );
 }

@@ -32,12 +32,12 @@ export default function Home() {
   return (
     <>
       <div className="row text-center">
-        <h4
+        <h2
           className="mb-3"
           style={{ zIndex: 10, backdropFilter: "blur(1px)" }}
         >
           We invite you to join in on the start to this new chapter of our lives
-        </h4>
+        </h2>
       </div>
       <div className="row carousel-wrapper">
         <Carousel

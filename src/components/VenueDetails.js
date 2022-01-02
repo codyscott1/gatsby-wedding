@@ -11,9 +11,8 @@ const VenueDetails = () => {
   );
 
   const StaticImageStyles = {
-    maxHeight: "375px",
-    maxWidth: "250px",
-    minHeight: "375px",
+    height: "375px",
+    width: "250px",
     borderRadius: "15px",
   };
 
@@ -34,7 +33,7 @@ const VenueDetails = () => {
               9000 Douglas Avenue, Urbandale
             </a>
           </div>
-          <h4 className="mb-3">Giovannetti Community Shelter</h4>
+          <h2 className="mb-3">Giovannetti Community Shelter</h2>
         </div>
       </div>
       <div className="col-12">

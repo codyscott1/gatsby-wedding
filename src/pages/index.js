@@ -4,10 +4,12 @@ import { StaticImage } from "gatsby-plugin-image";
 import Home from "../components/Home";
 import Reservations from "../components/reservations";
 import Details from "../components/VenueDetails";
+import Seo from "../components/SearchEngineOptimization";
 
 const IndexPage = () => {
   return (
     <div className="App">
+      <Seo />
       <div className="position-relative text-center">
         <StaticImage
           src="../images/leaves.png"
