@@ -1,8 +1,10 @@
 @font-face {
   font-family: "Feeling Passionate";
   src: url("../fonts/FP.ttf");
+  font-display: "fallback";
 }
 @font-face {
   font-family: "Indie Flower";
   src: url("../fonts/IF.ttf");
+  font-display: "fallback";
 }

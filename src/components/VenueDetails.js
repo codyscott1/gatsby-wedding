@@ -4,7 +4,7 @@ import { StaticImage } from "gatsby-plugin-image";
 import michaelScott from "../images/michaelScott.gif";
 import codyLexie from "../images/codyLexie.jpeg";
 import kued from "../images/Kued.png";
-import cheers from "../images/cheers.jpg";
+import cheers from "../images/champagne.svg";
 
 const VenueDetails = () => {
   const TimelineItem = ({ text, src, styles = {}, link = null }) => (
