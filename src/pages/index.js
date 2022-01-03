@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css";
+import "../css/App.css";
 import { StaticImage } from "gatsby-plugin-image";
 import Carousel from "../components/PhotoCarousel";
 import Reservations from "../components/reservations";
