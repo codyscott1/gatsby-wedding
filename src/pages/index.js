@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import { StaticImage } from "gatsby-plugin-image";
-import Home from "../components/Home";
+import Carousel from "../components/PhotoCarousel";
 import Reservations from "../components/reservations";
 import Details from "../components/VenueDetails";
 import Seo from "../components/SearchEngineOptimization";
@@ -32,7 +32,16 @@ const IndexPage = () => {
         </h1>
       </div>
       <div className="container-fluid">
-        <Home />
+        <div className="row text-center">
+          <h2
+            className="mb-3"
+            style={{ zIndex: 10, backdropFilter: "blur(1px)" }}
+          >
+            We invite you to join in on the start to this new chapter of our
+            lives
+          </h2>
+        </div>
+        <Carousel />
         <Reservations />
         <Details />
       </div>
