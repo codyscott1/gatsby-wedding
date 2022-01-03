@@ -4,7 +4,7 @@ import { useStaticQuery, graphql } from "gatsby";
 import Carousel from "react-bootstrap/Carousel";
 import { GatsbyImage } from "gatsby-plugin-image";
 
-export default function Home() {
+const PhotoCarousel = () => {
   const filteredImages = (images) =>
     images.filter(({ original }) => original.src.includes("carousel"));
 
@@ -46,11 +46,11 @@ export default function Home() {
               className="d-block rounded mh-50"
               quality={100}
             />
-
-            {/* <img src={image.original.src} /> */}
           </Carousel.Item>
         ))}
       </Carousel>
     </div>
   );
-}
+};
+
+export default PhotoCarousel;
