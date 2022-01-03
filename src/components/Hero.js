@@ -25,7 +25,7 @@ const Hero = () => (
       </h1>
     </div>
     <div className="row text-center">
-      <h2 className="mb-3" style={{ zIndex: 10, backdropFilter: "blur(1px)" }}>
+      <h2 className="mb-3">
         We invite you to join in on the start to this new chapter of our lives
       </h2>
     </div>
