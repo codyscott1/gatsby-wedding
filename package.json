@@ -2,10 +2,12 @@
   "name": "gatsby-wedding",
   "version": "1.0.0",
   "private": true,
-  "description": "gatsby-wedding",
+  "description": "Cody and Lexie's wedding site, now brought to you in Gatsby!",
   "author": "Cody Crandall",
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "supabase",
+    "netlify"
   ],
   "scripts": {
     "develop": "gatsby develop",
