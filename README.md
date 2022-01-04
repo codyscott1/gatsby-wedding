@@ -1,7 +1,7 @@
 ## 🚀 Quick start
 
-1.  **Start developing.**
-    `npm i && npm start`
+1. `cp .env.example .env.development`
+   Set .env.development values
 
-2.  **Open the code and start customizing!**
-    Your site is now running at http://localhost:8000!
+2. `npm i && npm start`
+   Your site is now running at http://localhost:8000!
