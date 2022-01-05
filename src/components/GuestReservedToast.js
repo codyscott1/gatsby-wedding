@@ -1,10 +1,13 @@
 import { Toast } from "react-bootstrap";
-import React from "react";
+import React, { useState } from "react";
 
 const GuestReservedToast = ({ names }) => {
-  if (!names || !names.length) {
+  const [isClosed, setIsClosed] = useState(false);
+  if (!names || !names.length || isClosed) {
     return null;
   }
+
+  const handleClick = () => setIsClosed(true);
   const getMessage = (names) => {
     if (names.length === 1) {
       return handleSingleName(names[0]);
@@ -32,6 +35,8 @@ const GuestReservedToast = ({ names }) => {
         position: "absolute",
         minHeight: "100px",
       }}
+      title="click to close reserved guests list"
+      onClick={handleClick}
       className="text-success start-50 translate-middle"
     >
       <Toast>
