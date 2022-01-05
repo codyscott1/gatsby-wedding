@@ -82,3 +82,7 @@ body h1 {
     min-height: 160px;
   }
 }
+
+.confirmed-reservation:hover {
+  cursor: url("../images/red-heart.svg"), auto;
+}

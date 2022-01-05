@@ -16,7 +16,7 @@ const GuestList = ({ guests, setGuests, confirmedReservationsCount }) => {
   };
 
   const reservationCSS = (guest) =>
-    guest.rsvp_confirmed ? "text-success bg-light" : "";
+    guest.rsvp_confirmed ? "text-success bg-light confirmed-reservation" : "";
 
   if (!guests?.length) {
     return <div></div>;
@@ -28,7 +28,7 @@ const GuestList = ({ guests, setGuests, confirmedReservationsCount }) => {
       </h3>
       <ul className="mb-3 list-group">
         {guests.map((guest, i) => (
-          <checkbox
+          <span
             className={`list-group-item d-flex justify-content-between lh-sm ${reservationCSS(
               guest
             )}`}
@@ -41,12 +41,14 @@ const GuestList = ({ guests, setGuests, confirmedReservationsCount }) => {
             <div className="form-check form-switch">
               <input
                 type="checkbox"
-                className="form-check-input"
+                className={`form-check-input ${
+                  guest.rsvp_confirmed ? "confirmed-reservation" : ""
+                }`}
                 checked={guest.rsvp_confirmed}
                 readOnly={true}
               />
             </div>
-          </checkbox>
+          </span>
         ))}
       </ul>
       <h4 className="mb-3 d-flex justify-content-between align-items-center ps-1 pe-4">
