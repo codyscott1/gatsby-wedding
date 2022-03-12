@@ -6,6 +6,7 @@ const GroupSearch = ({ setGuests }) => {
 
   const validIDLength = 5;
   const [guestID, setGuestID] = useState("");
+  const isGuestIDValid = guestID.length === validIDLength;
 
   const inputValidationCSS = () => {
     if (guestID.length < validIDLength) {
@@ -16,8 +17,6 @@ const GroupSearch = ({ setGuests }) => {
     return "is-invalid";
   };
 
-  const isGuestIDValid = guestID.length === validIDLength;
-
   const handleSubmit = async (event) => {
     setHideSearch(true);
     event.preventDefault();
@@ -25,11 +24,9 @@ const GroupSearch = ({ setGuests }) => {
     setGuests(data);
   };
 
-  const isHiddenCSS = hideSearch ? "d-none" : "";
-
   return (
     <>
-      {isHiddenCSS ? (
+      {hideSearch ? (
         <button
           type="button"
           className="btn btn-primary static btn-large m-auto order-first"
@@ -56,9 +53,9 @@ const GroupSearch = ({ setGuests }) => {
                   required=""
                   onChange={(e) => setGuestID(e.target.value)}
                 />
-                <div className="invalid-feedback">
+                <p className="invalid-feedback">
                   Valid Group ID is required. ex. 777B3
-                </div>
+                </p>
               </div>
               <button
                 onClick={handleSubmit}

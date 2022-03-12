@@ -19,7 +19,7 @@ const GuestList = ({ guests, setGuests, confirmedReservationsCount }) => {
     guest.rsvp_confirmed ? "text-success bg-light confirmed-reservation" : "";
 
   if (!guests?.length) {
-    return <div></div>;
+    return null;
   }
   return (
     <div className="col-10">
